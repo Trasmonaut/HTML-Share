@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Forest Lounge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple parallax scrolling effect with Materialize CSS.">
+  <link rel="icon" type="image/x-icon" href="images/icon.ico">
+  
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Spicy+Rice' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="background-audio" loop>
+    <source src="/sounds/bg-audio.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="rain-audio" loop>
+    <source src="sounds/rain.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="lighting-audio" loop>
+    <source src="sounds/lighting.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bugs-audio" loop>
+    <source src="sounds/bugs.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="crickets-audio" loop>
+    <source src="sounds/crickets.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="birds-audio" loop>
+    <source src="sounds/birds.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <div class="button-container">
+    <a id ="play-pause-btn">
+       <i id="play-pause-icon" class="material-icons white-text">audiotrack</i>
+        
+  </a>
+  </div>
+
+  <!--Nav Section-->
+  <div  class="navbar-fixed  hide-on-med-and-down ">
+    <nav class="nav-center">
+
+    <div class="nav-wrapper ">
+      
+      <ul id="nav-mobile" class="center  ">
+       <li class="nav-links"> About Us</li>
+       <li class="nav-links">Contact</li>
+       <li class="nav-links">Gallery</li>
+       <li class="nav-links">FAQ</li>
+       <li class="nav-links" style="border-radius: 15px; border: 2px solid white;">Wishlist </li>
+       <li class="nav-links logo-image"><a href="#">
+        <img src="images/logo.png" alt="Logo" class="logo-image">
+       </a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <div>
+  <!-- HERO SECTION with Parallax Effect for desktop view only -->
+    <div class="hero-parallax-container hide-on-med-and-down">
+      <img src="images/Parallax/sky.png" class="hero-layer" data-speed="-z0.05">
+      <img src="images/Parallax/7.png" class="hero-layer" data-speed="-0.1">
+      <img src="images/Parallax/6.png" class="hero-layer" data-speed="-0.2">
+      <img src="images/Parallax/5.png" class="hero-layer" data-speed="-0.3">
+      <img src="images/Parallax/4.png" class="hero-layer" data-speed="-0.4">
+      <img src="images/Parallax/3.png" class="hero-layer" data-speed="-0.5">
+      <img src="images/Parallax/2.png" class="hero-layer" data-speed="-0.6">
+      <img src="images/Parallax/1.png" class="hero-layer" data-speed="-0.7" style="height: -150px; z-index: 10;">
+
+      <!-- Text-Overlay -->
+      <div class="hero-overlay center-align hide-on-med-and-down">
+        <h1 class="main-logo">The Forest Lounge</h1>
+        <p class = "subtitle">Step into a living forest where every leaf whispers a story. Discover ancient secrets, forge bonds with magical creatures, and shape your path through a world designed for peace and wonder.</p>
+        <div class="button-group">
+         <button class="button watch-trailer-button" id="watch-trailer-button"> Watch Trailer</button>
+         <button class ="button wishlist-button">Wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MEDIUM HERO view -->
+   <div class="section medium-hero center hide-on-large-only" style="margin: 0; padding: 0;">
+      <img src="images/Parallax/regular.png" class="medium-hero">
+
+
+    </div>
+
+    <div class="medium-hero-overlay center-align hide-on-large-only">
+      <h1 class="medium-title">The Forest Lounge</h1>
+      <p class = "medium-subtitle">Step into a living forest where every leaf whispers a story. Discover ancient secrets, forge bonds with magical creatures, and shape your path through a world designed for peace and wonder.</p>
+      <div class="button-group">
+         <button class="button watch-trailer-button" id="watch-trailer-button"> Watch Trailer</button>
+         <button class ="button wishlist-button">Wishlist</button>
+        </div>
+    </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="section container">
+      <h3 class="white-text">Regular Section 1</h3>
+      <p class="grey-text text-lighten-2">this is where i would put more content...IF I HAD ANY.</p>
+    </div>
+
+    <div class="section container">
+      <h4 class="white-text">Section 2</h4>
+      <p class="grey-text text-lighten-1">You can add Materialize cards, modals, navs, etc. here.</p>
+    </div>
+
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+:root{
+  --dark-green: #101414;
+  --primary-green: #30744c;
+  --bright-green: #4CAF50;
+}
+
+html, body {
+  margin: 0;
+  height: auto;
+  padding: 0;
+  background-color: #101414;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Button Container */
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 50px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin:auto;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background-color: var(--dark-green);
+}
+.nav-links:hover,
+.nav-links:focus {
+  color: var(--bright-green);
+
+}
+
+.main-logo{
+  font-family:"Spicy Rice", sans-serif;
+ font-size:60px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  
+}
+
+.subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+}
+
+.nav-wrapper {
+  position: fixed;
+  background-color: var(--dark-green);
+  top: 0;
+  height:64px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav-links .logo-image {
+  height: 48px;
+  width: 48px;
+  object-fit: fill;
+  align-items: center;
+  display: flex;
+
+
+}
+.transparentBG {
+  background-color: rgba(0,0,0,0);
+}
+/* Floating Action Button */
+.btn-floating {
+  color: #ffffff; /* White icon */
+  transition: transform 0.3s ease;
+  background-image: url('bg-audio.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Hero Parallax Container */
+.hero-parallax-container {
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: auto;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-layer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+/* Overlay Text */
+.hero-overlay {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  width: auto ;
+  transform: translate(-50%,-70%);
+
+  pointer-events: auto;
+}
+
+/* Main content */
+.main-content {
+  position: relative;
+  z-index: 10;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.watch-trailer-button {
+  background: transparent;
+  backdrop-filter: blur(1px);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  font-family: 'verdana', sans-serif, ;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.watch-trailer-button:hover,
+.watch-trailer-button:focus {
+  background-color: transparent !important; 
+  color: white;
+  box-shadow: 0 0 15px white;
+  border-color: white;
+  outline: none;
+  transform: scale(1.05);
+}
+
+.wishlist-button {
+  background: var(--dark-green);
+  color: white;
+  border: 2px var(--dark-green);
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  font-family: 'verdana', sans-serif, ;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wishlist-button:hover,
+.wishlist-button:focus {
+  box-shadow: 0 0 15px white;
+  border-color: white;
+  outline: none;
+  transform: scale(1.05);
+}
+
+.watch-trailer-button:hover,
+.watch-trailer-button:focus {
+  background-color: transparent !important; 
+  color: white;
+  box-shadow: 0 0 15px white;
+  border-color: white;
+  outline: none;
+  transform: scale(1.05);
+}
+
+.medium-hero {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+.medium-hero img{
+  object-fit: cover;
+} 
+
+.medium-title{
+  font-family: "Spicy Rice", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: fit-content;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.medium-hero-overlay {
+  height: auto;
+  padding: 20px;
+  
+}
+
+.medium-subtitle {
+  font-family: 'Outfit', sans-serif;
+
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
