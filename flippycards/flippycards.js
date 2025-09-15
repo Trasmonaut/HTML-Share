@@ -13,9 +13,9 @@ async function downloadFile() {
     try {
 
         // example usage await addFileToZip('/neumorphism-404/neumorphism-404.html', 'neumorphism-404.html');
-        await addFileToZip('/flippycards/flippycards.html', 'flippycards.html');
-        await addFileToZip('/flippycards/flippycards.css', 'flippycards.css');
-        await addFileToZip('/flippycards/flippycards.js', 'flippycards.js');
+        await addFileToZip('/flippycards.html', 'flippycards.html');
+        await addFileToZip('flippycards.css', 'flippycards.css');
+        await addFileToZip('flippycards.js', 'flippycards.js');
 
         const content = await zip.generateAsync({ type: 'blob' });
         saveAs(content, 'flippycards.zip');

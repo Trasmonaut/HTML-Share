@@ -11,9 +11,9 @@ async function downloadFile() {
     }
 
     try {
-        await addFileToZip('/neumorphism-404/neumorphism-404.html', 'neumorphism-404.html');
-        await addFileToZip('/neumorphism-404/neumorphism-404.css', 'neumorphism-404.css');
-        await addFileToZip('/neumorphism-404/neumorphism-404.js', 'neumorphism-404.js');
+        await addFileToZip('neumorphism-404.html', 'neumorphism-404.html');
+        await addFileToZip('neumorphism-404.css', 'neumorphism-404.css');
+        await addFileToZip('neumorphism-404.js', 'neumorphism-404.js');
 
         const content = await zip.generateAsync({ type: 'blob' });
         saveAs(content, 'neumorphism-404.zip');

@@ -13,12 +13,12 @@ async function downloadFile() {
     try {
 
         // example usage await addFileToZip('/neumorphism-404/neumorphism-404.html', 'neumorphism-404.html');
-        await addFileToZip('.html', '.html');
-        await addFileToZip('.css', '.css');
-        await addFileToZip('.js', '.js');
+        await addFileToZip('flexicons.html', 'flexicons.html');
+        await addFileToZip('flexicons.css', 'flexicons.css');
+        await addFileToZip('flexicons.js', 'flexicons.js');
 
         const content = await zip.generateAsync({ type: 'blob' });
-        saveAs(content, 'neumorphism-404.zip');
+        saveAs(content, 'flexicons.zip');
     } catch (err) {
         alert('Error creating zip: ' + err.message);
     }

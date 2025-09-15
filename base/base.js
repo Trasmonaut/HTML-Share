@@ -12,7 +12,7 @@ async function downloadFile() {
 
     try {
 
-        // example usage await addFileToZip('/neumorphism-404/neumorphism-404.html', 'neumorphism-404.html');
+        // example usage await addFileToZip('/neumorphism-404.html', 'neumorphism-404.html');
         await addFileToZip('.html', '.html');
         await addFileToZip('.css', '.css');
         await addFileToZip('.js', '.js');
