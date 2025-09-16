@@ -18,7 +18,7 @@ async function downloadFile() {
         await addFileToZip('index.js', 'index.js');
 
         const content = await zip.generateAsync({ type: 'blob' });
-        saveAs(content, 'base.zip');
+        saveAs(content, 'bento-box.zip');
     } catch (err) {
         alert('Error creating zip: ' + err.message);
     }
