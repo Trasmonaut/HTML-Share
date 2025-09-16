@@ -1,0 +1,301 @@
+:root{
+
+    --primary-off-white: #f0f0f0;
+    --secondary-off-white: #e0e0e0;
+
+    --primary-blue: #3c74a9;
+    --secondary-blue: #42a5f5;
+
+    --primary-green: #4caf50;
+    --secondary-green: #81c784;
+
+    --primary-red: #f44336;
+    --secondary-red: #e57373;
+
+    --primary-yellow: #ffeb3b;
+    --secondary-yellow: #fff176;
+
+    --primary-black: #212121;
+    --secondary-black: #424242;
+
+    --primary-orange: #ff9800;
+    --secondary-orange: #ffb74d;
+
+
+}
+
+.return-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: var(--primary-black);
+    background-color: var(--primary-off-white);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow:
+        -5px -5px 15px rgba(255, 255, 255, 0.7), /* Light shadow (top-left) */
+        5px 5px 15px rgba(0, 0, 0, 0.3); /* Dark shadow (bottom-right) */
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.return-button:hover{
+    box-shadow:
+        inset -5px -5px 15px rgba(255, 255, 255, 0.7), /* Inset light shadow (top-left) */
+        inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inset dark shadow (bottom-right) */
+    transform: translateY(2px);
+}
+
+.download-button{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: var(--primary-black);
+    background-color: var(--primary-off-white);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow:
+        -5px -5px 15px rgba(255, 255, 255, 0.7), /* Light shadow (top-left) */
+        5px 5px 15px rgba(0, 0, 0, 0.3); /* Dark shadow (bottom-right) */
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.download-button:hover{
+    box-shadow:
+        inset -5px -5px 15px rgba(255, 255, 255, 0.7), /* Inset light shadow (top-left) */
+        inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inset dark shadow (bottom-right) */
+    transform: translateY(2px);
+}
+
+.download-button a{
+    text-decoration: none;
+    color: var(--primary-black);
+}
+
+
+
+/*MODIFY BELOW ONLY*/
+
+body{
+    background-color: var(--primary-off-white);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    
+}
+
+
+.bento-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--secondary-off-white);
+
+
+    border : 3px solid var(--primary-black);
+}
+
+
+.bento-box-1x1{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.bento-box-1x1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bento-box-1x2{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.bento-box-1x2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bento-box-1x3{
+    grid-column: span 3;
+    grid-row: span 1;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.bento-box-1x3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bento-box-2x1{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.bento-box-2x1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bento-box-2x2{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+  
+}
+
+.bento-box-2x2{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.bento-box-2x2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bento-box-2x3{
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: var(--primary-off-white);
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.bento-box-2x3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bento-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:  2vw;
+    font-weight: 600;
+    color: var(--primary-black);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

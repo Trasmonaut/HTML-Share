@@ -94,7 +94,7 @@ body{
     place-items: center;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 0 auto;
     width: 100%;
 }
@@ -126,6 +126,12 @@ body{
     transition-duration: 0.4s;
 
      box-shadow: 5px 5px 0px var(--secondary-black); 
+}
+.post-button:hover , .post-button:focus{
+    box-shadow: 8px 8px 0px var(--secondary-black); 
+    background-color: var(--primary-black);
+    transform: scale(1.05);
+    z-index: 1;
 }
 
 .post-button a{
