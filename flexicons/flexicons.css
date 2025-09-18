@@ -127,7 +127,7 @@ body{
   align-items: center;
   justify-content:justify;
 
-  height: 100%;
+  height: 24px;
   transition: color 0.2s;
 }
 
